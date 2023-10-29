@@ -1,5 +1,5 @@
 # Idea
-This website showcases how I usually celebrate fall/autumn
+This website showcases how I usually celebrate fall/autumn.
 
 # Tools
 1. HTML
