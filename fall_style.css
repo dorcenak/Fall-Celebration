@@ -1,0 +1,210 @@
+/*This portion is for the whole document*/
+html {
+    height: 100%;
+    width: 100%;
+}
+
+/*This portion is for the header*/
+
+.title-1 {
+    text-align: center;
+    padding-top: 2%;
+    color: #DF5E24;
+    font-family: Curlz MT;
+    font-size: 70px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-12{
+    text-align: center;
+    padding-top: 2%;
+    color: #DF5E24;
+    font-family: Curlz MT;
+    font-size: 70px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    font-variant: small-caps;
+}
+
+.image-container {
+    flex: 1;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.left-image, .right-image {
+    width: 100px; /* Set the desired width for the image */
+    height: 100px;
+    border-radius: 50%; /* Creates a circular shape */
+
+    animation: rotateImage 10s linear infinite; /* Rotate for 3 seconds infinitely */
+}
+
+@keyframes rotateImage {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Apply styles to the video container */
+.video-1 {
+    position: relative;
+    width: 100%;
+    max-width: 1290px; /* Adjust the width as needed */
+    margin: 0 auto;
+}
+
+video {
+    width: 100%;
+}
+
+.title-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+/* Style for the text itself */
+.title-2-1{
+    color: white;
+    font-size: 85px;
+    font-family: "Vivaldi", cursive;
+    text-align: center;
+    animation: moveText 3s ease-in-out forwards;
+    opacity: 0;
+    /* Additional styles for your text */
+}
+
+h4{
+    text-align: center;
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+/*This portion is for the columns in the main page*/
+
+.body-1{
+    text-align: center;
+    padding-top: 2%;
+}
+
+.col-sm{
+    text-align: center;
+}
+
+.row{
+    position: relative;
+    background-color: white;
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 7px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 4px 4px 50px 1px #DF5E24;
+}
+
+.col-sm a {
+    overflow: hidden;
+    padding-bottom: -100px;
+    margin-bottom: -100px;
+    padding-top: -100px;
+    margin-top: -100px;
+}
+
+.col-sm a img {
+    transition: transform 0.3s ease;
+
+}
+
+.col-sm a:hover img {
+    transform: scale(1.05);
+}
+
+.row a {
+    width: 20%;
+    height: 20%;
+    /*position: absolute;*/
+    border: 4px solid white;
+    border-radius: 20px;
+}
+
+.img-fluid {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    /* évite la déformation des images */
+    border-radius: 16px 16px 16px 16px;
+}
+
+.img-fluid a:focus,
+.img-fluid a:active{
+    box-shadow: 0px 0px 7px #DF5E24;
+}
+
+.col-sm p {
+    font-weight: 750;
+    padding-top: 20px;
+    font-size: 1.13vmax;
+    object-fit: fill;
+    white-space: nowrap;
+}
+
+
+/*This is for the footer*/
+.author-info {
+    text-align: center;
+    background-color: #f9f9f9; /* Background color for the author info section */
+    padding: 20px;
+    margin-top: 100px;
+}
+
+/* Style for the title */
+.author-info h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+/* Style for the image */
+.author-info img {
+    width: 200px; /* Set the desired width for the image */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px; /* Adjust as needed to control the space between the image and paragraphs */
+}
+
+/* Style for the paragraphs */
+.author-info p {
+    font-size: 18px;
+    margin: 10px 0;
+}
